@@ -29,7 +29,7 @@
         android:id="@+id/editTextEmail"
         android:hint="Enter here"
         android:layout_below="@+id/textView"
-       />
+        android:singleLine="true"/>
 
 
 </RelativeLayout>

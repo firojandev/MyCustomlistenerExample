@@ -60,8 +60,10 @@ public class CheckUseremailEditText extends EditText implements View.OnKeyListen
 
         boolean available = true;
 
-        // Whenever a user press a key, check if the username is available
         String useremail = getText().toString().toLowerCase();
+
+        Log.e("useremail"," useremail here-->"+useremail);
+
         if(!TextUtils.isEmpty(useremail)){
             for(int i=0; i<existUsers.length; i++) {
                 if(existUsers[i].equals(useremail)){

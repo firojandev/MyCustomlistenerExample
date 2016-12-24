@@ -39,10 +39,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onAvailableChecked(String useremail, boolean available) {
                 Log.e("check user 2", " 2 here-->" + available);
-
-                if(!available){
-                    checkUseremailEditText.setTextColor(Color.RED);
+                if (!available) {
+                    checkUseremailEditText.setTextColor(Color.WHITE);
                     checkUseremailEditText.setError("This email is already used. Choose another one.");
+                    checkUseremailEditText.setBackgroundColor(Color.RED);
                 } else {
                     checkUseremailEditText.setTextColor(Color.WHITE);
                     checkUseremailEditText.setBackgroundColor(Color.GREEN);
